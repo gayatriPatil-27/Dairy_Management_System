@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History Object Example</title>
+</head>
+<body>
+    <button onclick="goBack()">Go Back</button>
+    <button onclick="goForward()">Go Forward</button>
+    <button onclick="goToIndex(0)">Go to Index 0</button>
+
+    <script>
+        function goBack() {
+            history.back();
+        }
+
+        function goForward() {
+            history.forward();
+        }
+
+        function goToIndex(index) {
+            history.go(index);
+        }
+
+        // Manipulate history
+        function addNewPage() {
+            const stateObj = { page: "newPage" };
+            const title = "New Page";
+            const url = "newpage.html";
+            history.pushState(stateObj, title, url);
+        }
+
+        function replaceCurrentPage() {
+            const stateObj = { page: "updatedPage" };
+            const title = "Updated Page";
+            const url = "updatedpage.html";
+            history.replaceState(stateObj, title, url);
+        }
+    </script>
+</body>
+</html>

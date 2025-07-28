@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>Registration form</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+{% extends 'base.html' %}
+{% block content %}
+
+<!-- Page Header Start -->
+    <div class="container-fluid page-header py-5 mb-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="container text-center py-5">
+            <h1 class="display-3 text-black mb-4 animated slideInDown">Registration form</h1>
+        </div>
+    </div>
+    <!-- Page Header End -->
+{{ msg }}
+<div class="container">
+  <form class="form-horizontal" action="/register.html" method="POST">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="Customer_No">Customer Name:</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="name" placeholder="Enter Full Name" name="cust_name">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="address">Address</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="address" placeholder="Enter Address" name="address">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pincode">Pincode</label>
+      <div class="col-sm-10">          
+        <input type="number" class="form-control" id="pincode" placeholder="Enter Pincode" name="pincode">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="phone">Phone No</label>
+      <div class="col-sm-10">          
+        <input type="text" class="form-control" id="phone" placeholder="Enter Phone No" name="phone">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="cust_type">Customer Type:</label>
+      <div class="col-sm-10">  
+        <div class="radio">
+          <label><input type="radio" name="cust_type" id="sell" value="sell">Milk Manufactural</label>
+        </div>
+        <div class="radio">
+          <label><input type="radio" name="cust_type" id="buy" value="buy">Milk Buyer</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="psw">Password</label>
+        <div class="col-sm-10">
+        <input type="password" class="form-control" placeholder="Enter Password" name="password" id="psw" required>
+        </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="psw-confirm">Confirm Password</label>
+        <div class="col-sm-10">
+        <input type="password" class="form-control" placeholder="Repeat Password" name="cpassword" id="psw-confirm" required>
+        </div>
+    </div>
+    
+    <div class="bd-registered__wrapper">
+        <div class="bd-sigin__action-button mb-20">
+            <button class="bd-login__btn w-100" value="register">Register</button>
+        </div>
+        <div class="bd-sigin__action-button mb-20">
+            <button class="bd-login__btn w-100">cancle</button>
+        </div>
+    </div>
+</form>
+</div>
+
+{% endblock %}
+
+    </body>
+</html>
+
+
+                    

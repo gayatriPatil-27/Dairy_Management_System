@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Blank Page</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="static/admin/plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="static/admin/dist/css/adminlte.min.css">
+
+
+  <!-- FOR THE COLLECTION FORM  -->
+
+  <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Colorlib Templates">
+    <meta name="author" content="Colorlib">
+    <meta name="keywords" content="Colorlib Templates">
+
+    <!-- Title Page-->
+    <title>Sangh Reciept</title>
+
+    <!-- Icons font CSS-->
+    <link href="static/stat/vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="static/stat/vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="static/stat/vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="static/stat/vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="static/stat/css/main.css" rel="stylesheet" media="all">
+
+<!-- COLLECTION FORM CSS ENDS HERE -->
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+<!--   <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="static/admin/dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div> -->
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="contact.html" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- Messages Dropdown Menu -->
+      <!-- <li class="nav-item dropdown"> -->
+        <!-- <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a> -->
+        <!-- <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item"> -->
+            <!-- Message Start -->
+           <!--  <div class="media">
+              <img src="static/admin/dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div> -->
+            <!-- Message End -->
+          <!-- </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item"> -->
+            <!-- Message Start -->
+            <!-- <div class="media">
+              <img src="static/admin/dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div> -->
+            <!-- Message End -->
+         <!--  </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item"> -->
+            <!-- Message Start -->
+            <!-- <div class="media">
+              <img src="static/admin/dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Nora Silvester
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div> -->
+            <!-- Message End -->
+         <!--  </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li> -->
+      <!-- Notifications Dropdown Menu -->
+     <!--  <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li> -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="static/admin/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Milk Magic</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="static/admin/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">The MILK SaGa</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+       <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="admindashboard.html" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+                <!-- <i class="right fas fa-angle-left"></i> -->
+              </p>
+            </a>
+            <!-- <ul class="nav nav-treeview"> -->
+              <!-- <li class="nav-item">
+                <a href="./index.html" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v1</p>
+                </a>
+              </li> -->
+             <!--  <li class="nav-item">
+                <a href="./index2.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v2</p>
+                </a>
+              </li> -->
+              <!-- <li class="nav-item">
+                <a href="./index3.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard v3</p>
+                </a>
+              </li> -->
+            <!-- </ul> -->
+          </li>
+          <li class="nav-item">
+            <a href="collection.html" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Milk Collection
+                <!-- <span class="right badge badge-danger">New</span> -->
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="selling.html" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Milk Selling
+                <!-- <span class="right badge badge-danger">New</span> -->
+              </p>
+            </a>
+          </li>
+           <li class="nav-item">
+            <a href="cattlefeedsell.html" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Cattle Feed Sell
+                <!-- <span class="right badge badge-danger">New</span> -->
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="retailsell.html" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Retail Milk Selling
+                <!-- <span class="right badge badge-danger">New</span> -->
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="advance_entry.html" class="nav-link">
+              <i class="nav-icon fas fa-edit"></i>
+              <p>
+                Advance Entry
+                <!-- <span class="right badge badge-danger">New</span> -->
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+               <i class="nav-icon fas fa-chart-pie"></i>
+              
+              <p>
+                Entry
+                <i class="fas fa-angle-left right"></i>
+                <span class="badge badge-info right">4</span>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="sanghreciept.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sangh Reciept</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="sanghrate.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sangh Rate Sheet</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="customer_rate.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Customer Rate Sheet</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="cattlefeedentry.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Cattle Feed Entry</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+           <li class="nav-header">Daily Register</li>
+          <li class="nav-item">
+            <a href="milkcollection.html" class="nav-link">
+            <i class="nav-icon fas fa-book"></i>
+              <p>
+                Milk Collection
+                <!-- <span class="badge badge-info right">2</span> -->
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/gallery.html" class="nav-link">
+             <i class="nav-icon fas fa-book"></i>
+              <p>
+                Local Milk Selling
+              </p>
+            </a>
+          </li>
+           <li class="nav-item">
+            <a href="pages/gallery.html" class="nav-link">
+             <i class="nav-icon fas fa-book"></i>
+              <p>
+                Retail Milk Selling
+              </p>
+            </a>
+          </li>
+           <li class="nav-item">
+            <a href="pages/gallery.html" class="nav-link">
+             <i class="nav-icon fas fa-book"></i>
+              <p>
+                Dairy Register
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+             <i class="nav-icon fas fa-copy"></i>
+              <p>
+                Report
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/charts/chartjs.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Payment Register</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/charts/flot.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Customer Bill</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/charts/inline.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Customer Rate Sheet</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/charts/uplot.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Sangh Rate Sheet</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/charts/uplot.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Advance Register</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/charts/uplot.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>cattle Feed Register</p>
+                </a>
+              </li>
+               <li class="nav-item">
+                <a href="pages/charts/uplot.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Reduction Report</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-search"></i>
+              <p>
+                Browse
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/UI/general.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Active Customer</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/UI/icons.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Inactive Customer</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          
+          <li class="nav-header">EXAMPLES</li>
+          <li class="nav-item">
+            <a href="pages/calendar.html" class="nav-link">
+              <i class="nav-icon far fa-calendar-alt"></i>
+              <p>
+                Calendar
+                <span class="badge badge-info right">2</span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="pages/gallery.html" class="nav-link">
+              <i class="nav-icon far fa-image"></i>
+              <p>
+                Gallery
+              </p>
+            </a>
+          </li>
+          
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-search"></i>
+              <p>
+                Search
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="pages/search/simple.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Simple Search</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="pages/search/enhanced.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Enhanced</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0">Dashboard</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard v1</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+
+    <!-- Main content -->
+    <section class="content">
+
+      <!-- Default box -->
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">DAILY MILK SELLING</h3>
+
+<!--  <div class="card-tools">
+            <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
+              <i class="fas fa-minus"></i>
+            </button>
+            <button type="button" class="btn btn-tool" data-card-widget="remove" title="Remove">
+              <i class="fas fa-times"></i>
+            </button>
+          </div> -->
+        </div>
+        <div class="card-body main">
+          <div class="page-wrapper img  p-t-130 p-b-100 font-poppins">
+        <div class="wrapper-r wrapper--w680">
+            <div class="card-r card-4">
+              <div class="card card-primary">
+              <div class="card-header">
+                <h3 class="card-title"><center><b>LOCAL MILK SELLING</center></b></h3>
+              </div>
+                <div class="card-body-r">
+                    
+                   <form action="/update/{{selling[0]}}" method="POST">
+                        <div class="rowr rowr-space">
+                            <!-- <div class="colr-2">
+                                <div class="input-group-r">
+                                    <label class="label">Customer ID</label>
+                                    <input class="input--style-4" type="text" name="userid">
+                                </div>
+                            </div> -->
+                           <div class="colr-2">
+                                <div class="input-group-r">
+                                    <label class="label">Time</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">Morning
+                                            <input type="radio" checked="checked" value="morning" id="morning" name="daytime">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Evening
+                                            <input type="radio" value="evening" id="evening"  name="daytime">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="input-group">
+                            <label class="label">Customer Name</label>
+                            <input class="input--style-4" type="text" value ="{{selling[2]}}" name="name">
+                        </div>
+                        <div class="rowr rowr-space">
+                            <div class="colr-2">
+                                <div class="input-group-r">
+                                    <label class="label">Date</label>
+                                    <div class="input-group-r">
+                                        <input class="input--style-4" type="date" value="{{selling[3]}}" name="day">
+                                        <!-- <i class="zmdi zmdi-calendar-note input-icon js-btn-calendar"></i> -->
+                                    </div>
+                                </div>
+                            </div>                           
+                        <!-- </div>  -->
+                         <div class="colr-2">
+                                <div class="input-group-r">
+                                    <label class="label">Milk Type</label>
+                                    <div class="p-t-10">
+                                        <label class="radio-container m-r-45">Buffallo
+                                            <input type="radio" checked="checked" name="milk_type" id="buffallo" value="buffallo">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                        <label class="radio-container">Cow
+                                            <input type="radio"  checked="checked" value="cow" id="cow" name="milk_type">
+                                            <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="rowr rowr-space">
+                            <div class="colr-2">
+                                <div class="input-group-r">
+                                    <label class="label">Milk Quantity</label>
+                                    <input class="input--style-4" type="text" value="quantity" name="quantity">
+                                </div>
+                            </div>
+                            <!-- <div class="colr-2">
+                                <div class="input-group-r">
+                                    <label class="label">Rate</label>
+                                    <input class="input--style-4" type="text" name="rate">
+                                </div>
+                            </div>
+                        </div>
+                         <div class="rowr rowr-space">
+                            <div class="colr-2">
+                                <div class="input-group-r">
+                                    <label class="label">Total Amount</label>
+                                    <input class="input--style-4" type="text" name="amount">
+                                </div>
+                            </div>
+                          </div>                          -->              
+                        <div class="p-t-15">
+                            <button class="btnr btnr--radius-2 btnr--blue" type="submit">Update</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- COLLECTION FORM END -->
+        </div>
+             <!-- /.card-body -->
+        <div class="card-footer">
+          Footer
+          
+        <!-- COLLECTION FORM -->
+
+        </div>
+        <!-- /.card-footer-->
+
+      </div>
+      <!-- /.card -->
+
+
+
+    </section>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+
+
+
+
+  <footer class="main-footer">
+    <div class="float-right d-none d-sm-block">
+      <b>Version</b> 3.2.0
+    </div>
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="static/admin/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="static/admin/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="static/admin/dist/js/adminlte.min.js"></script>
+<!-- AdminLTE for demo purposes -->
+<script src="static/admin/dist/js/demo.js"></script>
+
+<!-- FOR COLLECTION FOEM JQUERY -->
+
+<!-- Jquery JS-->
+    <script src="static/stat/vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="static/stat/vendor/select2/select2.min.js"></script>
+    <script src="static/stat/vendor/datepicker/moment.min.js"></script>
+    <script src="static/stat/vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="static/stat/js/global.js"></script>
+
+</body>
+</html>

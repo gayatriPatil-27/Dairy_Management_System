@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Properties and Methods</title>
+</head>
+<body>
+    <p>hufpafl akfjaof zhfahkf</p>
+    <form id="exampleForm">
+        <label for="inputField">Enter your name:</label>
+        <input type="text" id="inputField">
+        <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+
+    <script>
+        // Properties
+        const pageTitle = document.title;
+        document.write("Title of the document: " + pageTitle + "<br>");
+
+        const paragraph = document.body;
+        document.write("Body element of the document: " + paragraph.nodeName + "<br>");
+
+        const forms = document.forms;
+        document.write("Forms in the document: " + forms.length + "<br>");
+
+        const firstImage = document.images[0];
+        document.write("First image element in the document: " + firstImage.src + "<br>");
+
+        // Methods
+        function submitForm() {
+            const inputValue = document.getElementById("inputField").value;
+            alert("Hello, " + inputValue + "! Your form is submitted.");
+        }
+
+        const newParagraph = document.createElement("p");
+        const newText = document.createTextNode("This is a dynamically created paragraph.");
+        newParagraph.appendChild(newText);
+        document.body.appendChild(newParagraph);
+    </script>
+</body>
+</html>
